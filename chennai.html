@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennai</title>
+
+    <style>
+        body {
+            background-image: url(bg1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0px;
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .corona {
+            height: 40px;
+            width: 40px;
+        }
+        
+        .navbar-brand {
+            font-size: 25px;
+        }
+        
+        .nav-link {
+            font-size: 18px;
+        }
+        
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        button {
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html"><img class="corona" src="corona.png"> COVID-19 PORTAL</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Isolation centres
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="delhi.html">Delhi</a>
+                    <a class="dropdown-item" href="mumbai.html">Mumbai</a>
+                    <a class="dropdown-item" href="bang.html">Bangalore</a>
+                    <a class="dropdown-item" href="hyd.html">Hyderabad</a>
+                    <a class="dropdown-item" href="chennai.html">Chennai</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booking.html">Test Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="map.html">Map & Stats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="symptom.html">Symptom checker</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Help
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline</a>
+                    <a class="dropdown-item" href="https://www.mohfw.gov.in/pdf/FAQ.pdf">FAQs</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="text-light text-center">List of Isolation Centres in Chennai</h1>
+
+    <div class="container">
+        <table class="table table-light table-striped ">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Hospital</th>
+                    <th>Total Hospital bed capacity</th>
+                    <th>No. of COVID beds</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td><a href="https://www.fortishealthcare.com/india/fortis-malar-hospital-in-adyar-tamil-nadu">Fortis Malar Hospital, Adyar</a></td>
+                    <td>160</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td><a href="https://vhschennai.org/">VHS, Taramani</a></td>
+                    <td>465</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td><a href="https://www.billrothhospitals.com/">Billroth Hospital, Shenoy Nagar</a></td>
+                    <td>300</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td><a href="http://www.csikalyanihospital.com/">CSI Kalyani</a></td>
+                    <td>100</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td><a href="https://www.kauveryhospital.com/">Kauvery Hospital, Alwarpet</a></td>
+                    <td>200</td>
+                    <td>30</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-center">
+        <a href="cities.html"><button type="button" class="btn btn-primary">Select another city</button></a>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

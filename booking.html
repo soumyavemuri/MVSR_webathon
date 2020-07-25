@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Booking</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <style>
+        body {
+            background-image: url(bg4.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0px;
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 80.5%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+        
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        #names {
+            display: inline;
+        }
+        
+        #fname,
+        #lname,
+        #hnumber,
+        #mnumber,
+        #city,
+        #state,
+        #pin {
+            width: 40%;
+        }
+        
+        #city,
+        #state,
+        #pin {
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        
+        a {
+            color: red;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        
+        .corona {
+            height: 40px;
+            width: 40px;
+        }
+        
+        .navbar-brand {
+            font-size: 25px;
+        }
+        
+        .nav-link {
+            font-size: 18px;
+        }
+        
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html"><img class="corona" src="corona.png"> COVID-19 PORTAL</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Isolation centres
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="delhi.html">Delhi</a>
+                    <a class="dropdown-item" href="mumbai.html">Mumbai</a>
+                    <a class="dropdown-item" href="bang.html">Bangalore</a>
+                    <a class="dropdown-item" href="hyd.html">Hyderabad</a>
+                    <a class="dropdown-item" href="chennai.html">Chennai</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booking.html">Test Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="map.html">Map & Stats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="symptom.html">Symptom checker</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Help
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline</a>
+                    <a class="dropdown-item" href="https://www.mohfw.gov.in/pdf/FAQ.pdf">FAQs</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="text-center">Book Your Test Now!</h1>
+    <div class="container">
+        <form action="success.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Name</label>
+                </div>
+                <div class="col-75" id="names">
+                    <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email ID</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="email" placeholder="Email ID" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mobilen">Phone Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="mnumber" name="mobilen" placeholder="Mobile Number" required>
+                    <input type="text" id="hnumber" name="homen" placeholder="Home Phone Number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="street" placeholder="Street, Area, Landmarks..." required>
+                    <input type="text" id="city" name="city" placeholder="City" required>
+                    <input type="text" id="state" name="state" placeholder="State" required>
+                    <select id="country" name="country">
+                  <option value="india">India</option>
+                </select>
+                    <input type="text" id="pin" name="pin" placeholder="PIN Code">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Symptoms</label>
+                </div>
+                <div class="col-75">
+                    <input type="checkbox" name="fever"> Fever
+                    <input type="checkbox" name="fever"> Dry Cough
+                    <input type="checkbox" name="fever"> Tiredness
+                    <input type="checkbox" name="fever"> Headache
+                    <input type="checkbox" name="fever"> Loss of Taste or smell
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="hosp">Hospital Preference</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="hosp" placeholder="Hospital Name, Branch..">
+                    <p><a href="https://covid19.telangana.gov.in/health-facilities/testing-centres/">Click here to search for testing areas near you</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Comments</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Type your additional comments here..." style="height:100px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
