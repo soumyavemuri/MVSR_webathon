@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+
+    <style>
+        body {
+            background-image: url(images/bg7.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0px;
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .corona {
+            height: 40px;
+            width: 40px;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+        }
+
+        button {
+            width: 220px;
+            height: 70px;
+        }
+
+        .btn {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .dropdown-menu {
+            width: 220px;
+            font-size: 22px;
+        }
+
+        .cities {
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html"><img class="corona" src="images/corona.png"> COVID-19 PORTAL</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Isolation centres
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="delhi.html">Delhi</a>
+                    <a class="dropdown-item" href="mumbai.html">Mumbai</a>
+                    <a class="dropdown-item" href="bang.html">Bangalore</a>
+                    <a class="dropdown-item" href="hyd.html">Hyderabad</a>
+                    <a class="dropdown-item" href="chennai.html">Chennai</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booking.html">Test Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="map.html">Map & Stats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="symptom.html">Symptom checker</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Help
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline</a>
+                    <a class="dropdown-item" href="https://www.mohfw.gov.in/pdf/FAQ.pdf">FAQs</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="dropdown text-center cities">
+        <button type="button" class="btn btn-lg btn-light dropdown-toggle" data-toggle="dropdown">
+          SELECT CITY
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="delhi.html">Delhi</a>
+            <a class="dropdown-item" href="mumbai.html">Mumbai</a>
+            <a class="dropdown-item" href="bang.html">Bangalore</a>
+            <a class="dropdown-item" href="hyd.html">Hyderabad</a>
+            <a class="dropdown-item" href="chennai.html">Chennai</a>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

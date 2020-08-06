@@ -1,0 +1,211 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <title>News</title>
+    <style>
+        body {
+            background-image: url(images/bg3.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0px;
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .corona {
+            height: 40px;
+            width: 40px;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+        }
+
+        .card {
+            width: 20 rem;
+            height: 600px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card:hover {
+            transform: scale(1.06);
+            background: #F0F8FF;
+            box-shadow: 2px 2px 6px 2px grey;
+            z-index: 2;
+        }
+
+        .card-body img {
+            width: 305px;
+            height: 200px;
+            margin-bottom: 7px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html"><img class="corona" src="images/corona.png"> COVID-19 PORTAL</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Isolation centres
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="delhi.html">Delhi</a>
+                    <a class="dropdown-item" href="mumbai.html">Mumbai</a>
+                    <a class="dropdown-item" href="bang.html">Bangalore</a>
+                    <a class="dropdown-item" href="hyd.html">Hyderabad</a>
+                    <a class="dropdown-item" href="chennai.html">Chennai</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="booking.html">Test Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="map.html">Map & Stats</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="symptom.html">Symptom checker</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Help
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">Helpline</a>
+                    <a class="dropdown-item" href="https://www.mohfw.gov.in/pdf/FAQ.pdf">FAQs</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 class="text-center">Weekly News bulletin</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/pic1.jpeg">
+                        <h5 class="card-title">
+                            <a href="https://timesofindia.indiatimes.com/india/coronavirus-live-updates-new-cases-surge-to-49000-deaths-to-757/liveblog/77161001.cms">
+                            Coronavirus live updates:
+                            </a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> New cases surge to 49,000+, deaths to 757</h6>
+                        <p class="card-text">Daily Covid-19 cases in the country inched closer to the 50,000 mark, with 49,000-plus fresh infections reported on Friday. The death toll also rose by a record 757 as the pandemic's massive surge continued, with both fresh cases
+                            and deaths touching new peaks for the third day running.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/pic2.jpg">
+                        <h5 class="card-title">
+                            <a href="https://www.hindustantimes.com/world-news/no-covid-19-herd-immunity-yet-says-who-chief-scientist-soumya-swaminathan/story-ho7p9cZpArmLMIDbpNolvO.html">
+                                No Covid-19 herd immunity yet, says WHO chief scientist Soumya Swaminathan
+                            </a>
+                        </h5>
+                        <p class="card-text">world Updated: Jul 25, 2020 07:57 IST The WHO's chief scientist Dr Soumya Swaminathan on Friday said "herd immunity" -- which is when enough people become resistant to a disease to stop its spread -- is still a long way ahead for
+                            Covid-19 since 50 to 60 per cent of the population will need to be immune to the novel coronavirus to protect the uninfected.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/pic3.jpg">
+                        <h5 class="card-title">
+                            <a href="https://economictimes.indiatimes.com/news/newsblogs/latest-daily-news-and-updates-july-25/liveblog/77161234.cms">
+                                Coronavirus Live News:
+                            </a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted"> India records over 4.20 lakh tests in a day, highest so far - The Economic Times</h6>
+                        <p class="card-text">Nearly 1.6 crore samples have been tested so far in India. Total lockdown to be imposed in the entire state of Tripura for 3 days from 5 am on 27th July to 5 am on 30th July. This will be in continuation of the night curfew to
+                            be imposed from 9 pm on 26th July: Government of Tripura</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/pic4.jpg">
+                        <h5 class="card-title">
+                            <a href="https://indianexpress.com/article/cities/hyderabad/telangana-hyderabad-andhra-pradesh-coronavirus-live-updates-total-corona-cases-lockdown-covid-19-today-latest-news-6522065/">
+                                Andhra Pradesh, Telangana Coronavirus Live Updates:
+                            </a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Andhra reports more than 7,000 cases in a day</h6>
+                        <p class="card-text"> Cases continued to rise sharply in Telangana on Friday, with 1,640 new cases and eight deaths being reported, taking the tally of positive cases in the state to 52,466 and deaths to 455. Meanwhile, Andhra Pradesh added 7,813 fresh
+                            cases in a day, taking the overall tally to 88,671 on Saturday. 52 COVID-19 patients succumbed while 3,208 were discharged from hospitals in the last 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/pic5.jpg">
+                        <h5 class="card-title">
+                            <a href="https://www.hindustantimes.com/india-news/kerala-reports-1-103-covid-19-cases-highest-since-coronavirus-outbreak/story-NntUYxbYffKsuaN3WiRXBJ.html">
+                                Kerala reports 1,103 Covid-19 cases, highest since coronavirus outbreak
+                            </a>
+                        </h5>
+                        <p class="card-text">Kerala on Saturday registered 1,103 new coronavirus cases, highest since the outbreak began in January, said the office of the state health minister K K Shailaja. It also reported four casualties taking the death toll to 60. The
+                            state capital Thiruvananthapuram remained worst-affected with 240 new cases and many areas of the city remained under triple lockdown. With 1,103 new cases total went up to 18,098.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/pic6.jpeg">
+                        <h5 class="card-title">
+                            <a href="https://www.thehindu.com/news/international/sri-lanka-has-completely-curbed-community-spread-of-coronavirus-head-of-covid-19-task-force/article32189566.ece">
+                                Sri Lanka has completely curbed community spread of coronavirus
+                            </a>
+                        </h5>
+
+                        <p class="card-text">Lt General Shavendra Silva, who is also the Army Commander, said that all the positive cases since April 30, including over 500 at the Kandakadu drug rehabilitation centre, were those who contracted the virus from Sri Lankan expatriates
+                            whose return was facilitated by the government. We haven’t found a single case within the community since April 30, Lt Silva told reporters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
